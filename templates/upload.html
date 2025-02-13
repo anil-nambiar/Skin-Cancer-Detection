@@ -1,14 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Skin Cancer Detection</title>
-  </head>
-  <body>
-    <h1>Upload an image of your skin lesion</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Skin Cancer Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <div class="banner">
+    <h1>Skin Cancer Detection</h1>
+  </div>
+  <div class="container">
+    <h2>Upload an image of your skin lesion</h2>
     <form method="post" enctype="multipart/form-data">
       <input type="file" name="file">
-      <input type="submit" value="Upload">
+      <button type="submit">Upload</button>
     </form>
-  </body>
+  </div>
+  <div class="footer">
+    <p>Developed by Anil E. Nambiar</p>
+  </div>
+</body>
+
 </html>
